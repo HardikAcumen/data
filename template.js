@@ -12,7 +12,7 @@ async function fetchTopics() {
         const insertionPoint = document.querySelector('.other-articlewrap');
         let blogListElement = "";
 
-        blog_list.forEach(topic_name => {
+        blog_list.reverse().forEach(topic_name => {
             blogListElement += `
                 <a href="${topic_name}.html">
                     ${topic_name}
